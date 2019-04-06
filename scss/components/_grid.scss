@@ -1,0 +1,103 @@
+// Grid:
+// Grid label for main-content of website
+.main-content {
+  grid-area: main-content;
+}
+
+// Grid Layout
+.main-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50px 60px auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main-content";
+  @include mq(tablet) {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+      "header header"
+      "nav main-content";
+  }
+}
+
+// Traffic container sizing
+.traffic {
+  width: 100%;
+  height: 275px;
+}
+
+//daily traffic container sizing.
+.daily__traffic {
+  width: 100%;
+  height: 275px;
+  @include mq(tablet) {
+    width: 49%;
+  }
+}
+//mobile users container sizing.
+.mobile__users {
+  width: 100%;
+  height: 275px;
+  @include mq(tablet) {
+    width: 50%;
+ }
+}
+
+.social__stats {
+  width: 100%;
+  height: 310px;
+  @include mq(tablet) {
+   height: 150px;
+ }
+}
+
+//new members container sizing.
+.new__members {
+  width: 100%;
+  height: 275px;
+  @include mq(tablet) {
+    width: 49%;
+ }
+}
+
+//recent activity container sizing.
+.recent__activity {
+  width: 100%;
+  height: 275px;
+  @include mq(tablet) {
+    width: 50%;
+ }
+}
+
+.message__user {
+  width: 100%;
+  height: 275px;
+  @include mq(tablet) {
+    width: 49%;
+ }
+}
+
+.dashboard__settings {
+  width: 100%;
+  height: 275px;
+  @include mq(tablet) {
+    width: 50%;
+ }
+}
+// @768px
+@include mq(tablet){
+  .dashboard__title {
+    width: 17%;
+  }
+
+
+
+
+
+
+
+
+}

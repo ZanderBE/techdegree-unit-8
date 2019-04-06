@@ -1,0 +1,72 @@
+// Forms:
+//Aligns the message-user content area
+.message-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+// Aligns the search box
+.search__user {
+  width: 95%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  background-color: $light-blue-background;
+}
+
+// Aligns the message box
+.message {
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 80px;
+  margin-bottom: 12px;
+  background-color: $light-blue-background;
+
+}
+
+//main search styling for dashboard
+input {
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #D6DBE6;
+  @include mq(tablet) {
+    &[type=search] { // is the original
+      background-color: white;
+      background-image: url('../icons/icons8-search.svg');
+      background-position: 290px 0px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: 20px;
+      padding-right: 135px;
+      height: 35px;
+    }
+  }
+
+}
+
+.main__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq(tablet) {
+    width: 83%;
+    height: 58px;
+    justify-content: flex-end;
+    background-color: $light-blue-background;
+    border-bottom: 1px solid #D6DBE6;
+    border-left: 1px solid #D6DBE6;
+  }
+}
+
+//styling for search at tablet and desktop sizes
+@include mq(tablet) {
+
+  .search {
+    display: flex;
+    align-items: center;
+    border-color: #D6DBE6;
+
+  }
+}

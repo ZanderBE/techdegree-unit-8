@@ -1,0 +1,27 @@
+.sidebar-nav {
+  background-color: $mr-meeseeks-blue-dark;
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  & a {
+    display: flex;
+    justify-content: center;
+  }
+  & a img {
+    width: 30%;
+  }
+  @include mq(tablet) {
+      display: flex;
+      flex-direction: column;
+      & a {
+        align-items: flex-start;
+        margin-top: 20px;
+      }
+      & a img {
+        width: 40%;
+      }
+      & a:nth-of-type(1) {
+        border-left: 1px solid #49fb35;
+      }
+  }
+}
