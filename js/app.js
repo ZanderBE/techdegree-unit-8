@@ -52,7 +52,7 @@ function createModalCard(data) {
     employeeModalCard += `<p class="employee-name">${employee[i].name.first} ${employee[i].name.last}</p>`;
     employeeModalCard += `<p class="text-description">${employee[i].email}</p>`;
     employeeModalCard += `<p class="text-description capitalize">${employee[i].location.city}</p>`;
-    employeeModalCard += `</div>`; 
+    employeeModalCard += `</div>`;
     employeeModalCard += `<div class="bottom-modal">`
     employeeModalCard += `<p class="text-description">${employee[i].cell}</p>`;
     employeeModalCard += `<p class="text-description capitalize">${employee[i].location.street}, ${employee[i].location.city}, ${employee[i].location.state} ${employee[i].location.postcode}</p>`;
@@ -109,7 +109,7 @@ input.addEventListener('keyup', function myFunction() {
   }
 });
 
-//
+//Functions to control the previous and next buttons
 document.addEventListener('click', function(e) {
   if (e.target.className === 'previous round') {
     for (i=0; i < employeeModal.childNodes.length; i++) {
