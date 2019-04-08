@@ -70,8 +70,8 @@ function createModalCard(data) {
 
 // Event Listeners
 //Open modal window for employee after their box has been clicked
-employeeList.addEventListener('click', function(e) {
-  if(e.target && e.target.nodeName == "DIV") {
+document.addEventListener('click', function(e) {
+  if (e.target.className === 'employee-card') {
     for (i=0; i < employeeModal.childNodes.length; i++) {
       if (e.target.dataset.employee == employeeModal.childNodes[i].dataset.employee) {
         employeeModal.style.display = 'block';
@@ -83,7 +83,7 @@ employeeList.addEventListener('click', function(e) {
 
 // Close Modal Window after the close button has been clicked
 document.addEventListener('click', function(e) {
-  if (e.target.className === "close") {
+  if (e.target.className === 'close') {
     employeeModal.style.display = 'none';
     for (i=0; i < employeeModal.childNodes.length; i++) {
       if (employeeModal.childNodes[i].style.display === 'block') {
